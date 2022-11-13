@@ -45,7 +45,6 @@ jobs:
         run: |
           mkdir -p ./temp/fd_skill
           cp ./{LICENSE,README.md,fxmanifest.lua,client.lua,config.lua,utils.lua} ./temp/fd_skill
-          cp -r ./{config,locales,modules,stream} ./temp/fd_skill
           cd ./temp && zip -r ../fd_skill.zip ./fd_skill
       - name: Create Release
         uses: "marvinpinto/action-automatic-releases@v1.2.1"
