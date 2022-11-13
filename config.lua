@@ -11,18 +11,6 @@ Config = {
     },
     -- Keys
     keys = {
-        ['1'] = {
-            keyCode = 157
-        },
-        ['2'] = {
-            keyCode = 158
-        },
-        ['3'] = {
-            keyCode = 160
-        },
-        ['4'] = {
-            keyCode = 164
-        },
         ['Q'] = {
             keyCode = 44
         },
@@ -41,7 +29,7 @@ Config = {
         easy = {
             gap = 20,
             speedMultiplier = 1.0,
-            minPosition = 128,
+            minPosition = 50,
             isReversed = false,
             isVertical = false,
         },
