@@ -54,13 +54,13 @@ end
 
 ### Multi cycle example
 ```lua
-local success = exports.fd_skill:skill('medium', 'medium', 'medium', {
+local success = exports.fd_skill:skill({'medium', 'medium', 'medium', {
 	gap = 20,
     speedMultiplier = 1.0,
     minPosition = 50,
     isReversed = false,
     isVertical = false,
-})
+}})
 
 if not success then
 	print('Skillcheck failed')
