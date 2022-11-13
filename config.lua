@@ -41,25 +41,28 @@ Config = {
         easy = {
             gap = 20,
             speedMultiplier = 1.0,
+            minPosition = 128,
             isReversed = false,
             isVertical = false,
         },
         medium = {
             gap = 20,
             speedMultiplier = 4.0,
+            minPosition = 50,
             isReversed = false,
             isVertical = true,
         },
         hard = {
             gap = 18,
             speedMultiplier = 6.0,
+            minPosition = 50,
             isReversed = true,
             isVertical = false,
         },
         veryhard = {
             gap = 15,
             speedMultiplier = 7.0,
-            minPosition = 30,
+            minPosition = 50,
             isReversed = true,
             isVertical = true,
         }
