@@ -202,6 +202,29 @@ function skill(difficulty)
         return doSkillFromString(difficulty)
     end
 
+    if type(difficulty) == 'table' and
+        (difficulty.gap
+            or difficulty.speedMultiplier
+            or difficulty.isVertical
+            or difficulty.isReversed
+            or difficulty.minPosition) then
+        local success = Citizen.Await(
+            doSkill(
+                difficulty.gap or 20,
+                difficulty.speedMultiplier or 1.0,
+                difficulty.isVertical or false,
+                difficulty.isReversed or false,
+                difficulty.minPosition or 10
+            )
+        )
+
+        if not success then
+            return false
+        end
+
+        return true
+    end
+
     if type(difficulty) == 'table' then
         for _, data in pairs(difficulty) do
             Wait(0)
